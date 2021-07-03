@@ -1,0 +1,30 @@
+version: "2.0"
+
+intents:
+  - greet
+  - taken_v
+  - not_taken
+  - how_many
+
+responses:
+  utter_vac_que:
+  - text: "thankyou for taking this survey...Have you taken the covid-19 vaccine?"
+
+  utter_taken_vaccine:
+  - text: "Congratulations! Have you taken both the doses or just one"
+
+  utter_how_many:
+  - text: "Congratulations"
+
+  utter_not_taken:
+  - text: "Do you need any help in finding a slot?"
+
+  utter_goodbye:
+  - text: "Goodbye"
+  
+  utter_iamabot:
+  - text: "Goodbye"
+
+session_config:
+  session_expiration_time: 60
+ # carry_over_slots_to_new_session: true

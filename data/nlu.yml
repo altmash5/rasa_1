@@ -1,0 +1,36 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: taken_v
+  examples: |
+    - yes
+    - taken
+    
+    
+- intent: not_taken
+  examples: |
+    - no
+    - not taken
+
+- intent: how_many
+  examples: |
+    - 1
+    - 2
+    - both
+

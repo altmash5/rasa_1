@@ -1,0 +1,31 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: taken
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_vac_que
+  - user: |
+      yes
+    intent: taken_v
+  - action: utter_taken_vaccine
+  - user: |
+      both
+    intent: how_many
+  - action: utter_how_many
+
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+ - action: utter_vac_que
+  - user: |
+      no
+    intent: not_taken
+  - action: utter_not_taken
+  
